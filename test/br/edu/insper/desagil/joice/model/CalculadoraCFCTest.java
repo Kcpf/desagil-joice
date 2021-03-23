@@ -2,14 +2,16 @@ package br.edu.insper.desagil.joice.model;
 
 import static org.junit.Assert.assertEquals;
 
-import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CalculadoraCFCTest {
 	
+	private CalculadoraCFC calc;
+	
 	@BeforeEach
 	public void antes() {
-		CalculadoraCFC calc = new CalculadoraCFC();
+		calc = new CalculadoraCFC();
 	}
 	
 	@Test
