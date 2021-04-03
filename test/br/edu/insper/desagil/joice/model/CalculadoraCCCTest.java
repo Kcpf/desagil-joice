@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 public class CalculadoraCCCTest {
 	
 	private CalculadoraCCC calc;
+	private static double DELTA = 0.05;
 	
 	@BeforeEach
 	public void antes() {
@@ -22,7 +23,7 @@ public class CalculadoraCCCTest {
 		
 		double resultado = calc.calcula(peso, raio);
 		
-		assertEquals(resultado, 8.57, 0.05);
+		assertEquals(resultado, 8.57, DELTA);
 	}
 	
 	@Test
@@ -32,7 +33,7 @@ public class CalculadoraCCCTest {
 		
 		double resultado = calc.calcula(peso, raio);
 		
-		assertEquals(resultado, 19.28, 0.05);
+		assertEquals(resultado, 19.28, DELTA);
 	}
 	
 	
@@ -43,7 +44,7 @@ public class CalculadoraCCCTest {
 		
 		double resultado = calc.calcula(peso, raio);
 		
-		assertEquals(resultado, 0.53, 0.05);
+		assertEquals(resultado, 0.53, DELTA);
 	}
 	
 }
